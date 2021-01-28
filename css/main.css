@@ -114,7 +114,7 @@ ul {
     align-items: center;
     position: relative;
     background-color: #9b8d8d;
-    height: 50vw;
+    height: 40vw;
     justify-content: center;
     z-index: 0;
 }
@@ -270,8 +270,9 @@ ul {
 
 
 .section img {
-    width: 100%;
     height: auto;
+    width: 100%;
+    max-width: 700px;
 }
 
 
@@ -293,13 +294,37 @@ ul {
         display: none;
     }
 
+    .slideshow-inner-container {
+        height: 50vw;
+    }
+
+    .btn-wrapper {
+        margin: 20px 20px;
+        position: absolute;
+        bottom: 0;
+    }
+
     .wrapper {
         flex-direction: column;
+    }
+
+    .footer .flex {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer .flex div {
+        text-align: center;
+    }
+
+    .footer ul {
+        justify-content: center;
+        margin: 0 30px 0 0px;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    p {
-        color: red !important;
+    .slideshow-inner-container {
+        height: 60vw;
     }
 }
