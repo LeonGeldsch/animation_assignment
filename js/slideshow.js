@@ -11,6 +11,9 @@ var slideContainer = document.querySelector(".slideshow-container");
 // the position of the first slide
 var firstSlideIndex = 0;
 
+// all elements with a hover-effect class
+var allHoverEffectElements = document.querySelectorAll(".hover-effect");
+
 
 // turn the slideshow one right
 function turnSlideRight () {
@@ -179,7 +182,7 @@ document.addEventListener('keydown', function(e) {
 });
 
 // add a hover effect on the slideshow images
-allSlides.forEach(element =>
+allHoverEffectElements.forEach(element =>
     element.addEventListener('mouseenter', function(e) {
         gsap.to(e.target, {
             scale: 1.1,
@@ -196,7 +199,7 @@ allSlides.forEach(element =>
         }
     })
 );
-allSlides.forEach(element =>
+allHoverEffectElements.forEach(element =>
     element.addEventListener('mouseleave', function(e) {
         gsap.to(e.target, {
             scale: 1,
