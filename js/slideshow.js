@@ -221,6 +221,7 @@ allHoverEffectElements.forEach(element =>
 slideRightButton.addEventListener('click', turnSlideRight);
 slideLeftButton.addEventListener('click', turnSlideLeft);
 
+//window.addEventListener('resize', turnSlideRight);
 
 /*
  *  -------------------------------------------------------------------------
@@ -228,3 +229,4 @@ slideLeftButton.addEventListener('click', turnSlideLeft);
 
 
 startSlideShow();
+
